@@ -4,9 +4,9 @@
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="564"
-    height="564"
-    viewbox="20 20 564 564">
+    width="2000"
+    height="2000"
+    viewbox="0 0 0 0">
     <defs>
         <filter id="blur">
             <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
