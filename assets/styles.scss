@@ -13,7 +13,7 @@ $dark-text: #012D41;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-main {
+.open {
   color: white;
   width: 100%;
   background-image: url('images/Storm-Clouds.jpg');
@@ -36,6 +36,11 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem;
+}
+.closed {
+  overflow: hidden;
+  width: 0;
+  height: 0;
 }
 .current-conditions {
   filter: drop-shadow(.5rem .5rem .7rem black);
@@ -70,11 +75,39 @@ h3 {
 }
 aside {
   color: $dark-text;
-  width: 40rem;
   height: 100vh;
   background: $bland-background;
-  padding: 1rem;
   overflow-y: scroll;
+}
+.full {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.full section {
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}
+.full>div {
+  display: none;
+}
+.side {
+  width: 40rem;
+  padding: 1rem;
+}
+aside.narrow {
+  width: 6rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.narrow header,
+.narrow .ten-day,
+.narrow .seven-hour h4 {
+  display: none;
 }
 .hamburger-button {
   float: left;
@@ -83,6 +116,11 @@ aside {
 }
 .hamburger-button img {
   width: 1.5rem;
+}
+.narrow .hamburger-button {
+  float: none;
+  padding: 0;
+  margin: .5rem auto;
 }
 header {
   width: 100%;
@@ -101,14 +139,22 @@ input {
   width: 15rem;
   height: 3rem;
   padding: 1rem;
-  text-align: center;
   font-size: 1.25rem;
+}
+input::placeholder {
+  text-align: center;
 }
 button {
   width: 3rem;
   height: 3rem;
   text-align: center;
   font-size: 1.25rem;
+}
+.narrow .seven-hour {
+  padding: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .hourly {
   padding: 1rem 0;
@@ -117,6 +163,15 @@ button {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+.narrow .hourly {
+  padding: 1rem 0;
+  border-bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+.narrow .hour {
+  padding: .5rem 0;
 }
 .hour p {
   font-size: 1rem;
@@ -146,6 +201,38 @@ button {
 .day .wrapper {
   display: inline-block;
 }
-.day-name {
-  width: 10rem;
+p.day-name {
+  width: 7rem;
+}
+@media (max-width: 1000px) {
+  .open {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  body {
+    font-size: 1em;
+  }
+  #everything {
+    flex-direction: column;
+  }
+  .open {
+    flex-direction: row;
+    width: 100vw;
+    height: 40vh;
+  }
+  .hamburger-button {
+    display: none;
+  }
+  .side,
+  .narrow,
+  .wide {
+    width: 100vw;
+    min-height: 60vh;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    font-size: .8rem;
+  }
 }
