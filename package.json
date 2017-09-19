@@ -57,6 +57,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "prefixtrie": "git+https://github.com/alexbanister/prefixTrie.git",
     "react-svg": "^2.1.21"
   }
 }
