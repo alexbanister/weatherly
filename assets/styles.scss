@@ -150,6 +150,26 @@ button {
   text-align: center;
   font-size: 1.25rem;
 }
+.suggest-wrapper {
+  position: relative;
+}
+.suggestions {
+  width: 100%;
+  margin: .25rem;
+  position: absolute;
+  background: $accent-background;
+  box-shadow: 5px 5px 5px black;
+}
+.suggestions h4 {
+  padding: .25rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  &:hover {
+    color: $brand-color;
+    background: $bland-background;
+  }
+}
 .narrow .seven-hour {
   padding: .5rem;
   display: flex;
