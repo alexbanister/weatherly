@@ -1,6 +1,6 @@
 import React from 'react';
 import SevenHour from '../lib/SevenHour';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('Current Weather functionality', () => {
   const hourData = ['', '', '', '', '', '', ''];

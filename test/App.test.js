@@ -1,6 +1,6 @@
 import React from 'react';
 import App from '../lib/App';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('App functionality', () => {
   const wrapper = shallow(<App />);
@@ -33,7 +33,7 @@ describe('App functionality', () => {
         temp: '0',
       }],
       location: '',
-      sideBarClass: 'full'
+      sideBarClass: 'full',
     });
   });
 
