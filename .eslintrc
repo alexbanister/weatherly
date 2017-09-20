@@ -1,6 +1,9 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb/base",
+  "plugins": [
+    "react"
+  ],
+  "extends": ["airbnb/base", "eslint:recommended", "plugin:react/recommended"],
   "env": {
     "browser": true,
     "mocha": true,
@@ -10,6 +13,7 @@
     "quotes": [2, "single"],
     "eol-last": [0],
     "no-mixed-requires": [0],
-    "no-underscore-dangle": [0]
-  }
+    "no-underscore-dangle": [0],
+    "react/prop-types": [0]
+  },
 }
