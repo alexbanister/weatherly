@@ -1,8 +1,8 @@
 import React from 'react';
 import CurrentWeather from '../lib/CurrentWeather';
-import Sidebar from '../lib/Sidebar';
-import Location from '../lib/Location';
-import { shallow, mount } from 'enzyme';
+// import Sidebar from '../lib/Sidebar';
+// import Location from '../lib/Location';
+import { shallow } from 'enzyme';
 
 describe('Current Weather functionality', () => {
   const mockData = {

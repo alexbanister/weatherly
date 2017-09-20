@@ -2,7 +2,6 @@ import React from 'react';
 import HourlyCard from '../lib/HourlyCard.js';
 import { shallow } from 'enzyme';
 
-
 describe('Hourly Card', () => {
 
   let data = {
