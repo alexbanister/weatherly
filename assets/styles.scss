@@ -169,6 +169,10 @@ button {
     color: $brand-color;
     background: $bland-background;
   }
+  &:focus {
+    color: $brand-color;
+    background: $bland-background;
+  }
 }
 .narrow .seven-hour {
   padding: .5rem;
