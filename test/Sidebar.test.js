@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../lib/Sidebar';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('Current Weather functionality', () => {
   const wrapper = shallow(<Sidebar />);

@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../lib/Header';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('Current Weather functionality', () => {
   const wrapper = shallow(<Header />);
-  const button = wrapper.find('button');
+  // const button = wrapper.find('button');
   const input = wrapper.find('input');
 
   it('should exist', () => {

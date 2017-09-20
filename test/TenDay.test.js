@@ -1,6 +1,6 @@
 import React from 'react';
 import TenDay from '../lib/TenDay';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('Current Weather functionality', () => {
   const dayData = ['', '', '', '', '', '', '', '', '', ''];
